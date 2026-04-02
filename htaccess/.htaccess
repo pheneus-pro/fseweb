@@ -1,0 +1,10 @@
+AddType application/x-httpd-php .php
+AddType application/x-httpd-php .php4
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{HTTP_HOST} ^fedorsecurity.sk [NC]
+	RewriteRule ^(.*)$ http://www.fedorsecurity.sk/ [L,R=301]
+        RewriteCond %{REQUEST_FILENAME} !-d 
+        RewriteCond %{REQUEST_FILENAME}\.php -f 
+        RewriteRule ^(.*)$ $1.php
+</IfModule>			

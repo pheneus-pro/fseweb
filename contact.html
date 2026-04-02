@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Kontaktujte Fedor SECURITY EQUIPMENT – Stará Ľubovňa.">
+  <meta name="author" content="Ing. Anton Fedor">
+
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/favicon-180.png">
+
+  <meta property="og:title" content="Kontakt – Fedor SECURITY EQUIPMENT" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://fedorsecurity.sk/contact" />
+  <meta property="og:image" content="http://fedorsecurity.sk/img/og.png" />
+
+  <title>Kontakt – Fedor SECURITY EQUIPMENT</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/modern.css" rel="stylesheet">
+  <link rel="stylesheet" href="/fontawesome/css/font-awesome.min.css">
+
+  <style>
+    /* Contact form styles */
+    .contact-form {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+    }
+
+    .contact-form h3 {
+      font-size: 1.2rem; font-weight: 700;
+      color: var(--txt); margin-bottom: 1.5rem;
+    }
+
+    .form-group { margin-bottom: 1.1rem; }
+
+    .form-label {
+      display: block;
+      font-size: 0.8rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: .8px;
+      color: var(--txt2); margin-bottom: .45rem;
+    }
+
+    .form-control-modern {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      color: var(--txt);
+      padding: 11px 14px;
+      font-size: .9rem;
+      font-family: 'Inter', sans-serif;
+      transition: border-color .2s, box-shadow .2s;
+      outline: none;
+    }
+
+    .form-control-modern:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(59,130,246,.15);
+    }
+
+    .form-control-modern::placeholder { color: var(--txt2); opacity: .6; }
+
+    textarea.form-control-modern { resize: vertical; min-height: 130px; }
+
+    .form-submit {
+      width: 100%;
+      background: var(--accent); color: #fff;
+      border: none; padding: 13px;
+      border-radius: 10px; font-weight: 600; font-size: .9rem;
+      cursor: pointer; transition: background .2s, transform .2s;
+      font-family: 'Inter', sans-serif;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+
+    .form-submit:hover {
+      background: var(--accent-h);
+      transform: translateY(-2px);
+    }
+
+    .form-note {
+      font-size: .75rem; color: var(--txt2);
+      margin-top: .75rem; text-align: center;
+    }
+
+    /* Success / Error states */
+    .form-success {
+      display: none;
+      background: rgba(34,197,94,.1);
+      border: 1px solid rgba(34,197,94,.25);
+      border-radius: 10px; padding: 1rem 1.25rem;
+      color: #4ade80; font-size: .9rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/index">
+        <div class="brand-text">
+          <strong>FEDOR</strong>
+          <span>SECURITY EQUIPMENT</span>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav"
+        aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index"><i class="fa fa-home"></i> Domov</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">O nás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services">Služby</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb-row">
+        <a href="/index">Domov</a><span>›</span> Kontakt
+      </div>
+      <h1>Kontakt</h1>
+      <p>Sme tu pre Vás — napíšte alebo zavolajte</p>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <section class="section">
+    <div class="container">
+      <div class="row">
+
+        <!-- Contact info column -->
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <p class="sec-label">Kde nás nájdete</p>
+          <h2 class="sec-title" style="font-size:1.5rem; margin-bottom:1.75rem;">Kontaktné informácie</h2>
+
+          <div class="d-flex flex-column" style="gap:1rem;">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa fa-map-marker"></i></div>
+              <div>
+                <h5>Adresa</h5>
+                <p>
+                  Ing. Peter Fedor – SECURITY EQUIPMENT<br>
+                  Mierová 42<br>
+                  064 01 Stará Ľubovňa
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa fa-phone"></i></div>
+              <div>
+                <h5>Telefón</h5>
+                <a href="tel:+421905252175">+421 905 252 175</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+              <div>
+                <h5>E-mail</h5>
+                <a href="mailto:mail@fedorsecurity.sk">mail@fedorsecurity.sk</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa fa-university"></i></div>
+              <div>
+                <h5>Fakturačné údaje</h5>
+                <p>
+                  IČO: 47766468<br>
+                  DIČ: 1086868904<br>
+                  IČ DPH: SK1086868904
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form column -->
+        <div class="col-lg-7">
+          <div class="contact-form">
+            <h3><i class="fa fa-paper-plane text-accent" style="margin-right:8px;"></i>Napíšte nám správu</h3>
+
+            <!--
+              FORMSPREE: Zaregistrujte sa na https://formspree.io, vytvorte formulár
+              a nahraďte YOUR_FORM_ID v action atribúte vaším skutočným ID.
+              Formulár začne odosielať emaily na mail@fedorsecurity.sk bez akéhokoľvek backendu.
+            -->
+            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="form-label" for="name">Meno a priezvisko</label>
+                    <input type="text" id="name" name="name" class="form-control-modern"
+                      placeholder="Ján Novák" required>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label class="form-label" for="email">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-control-modern"
+                      placeholder="jan@priklad.sk" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Telefón (nepovinné)</label>
+                <input type="tel" id="phone" name="phone" class="form-control-modern"
+                  placeholder="+421 9xx xxx xxx">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subject">Predmet</label>
+                <input type="text" id="subject" name="subject" class="form-control-modern"
+                  placeholder="Napr. Dopyt na kamerový systém" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="message">Správa</label>
+                <textarea id="message" name="message" class="form-control-modern"
+                  placeholder="Popíšte Váš dopyt alebo požiadavku..." required></textarea>
+              </div>
+
+              <!-- Honeypot anti-spam -->
+              <input type="text" name="_gotcha" style="display:none">
+              <input type="hidden" name="_subject" value="Nová správa z fedorsecurity.sk">
+
+              <button type="submit" class="form-submit">
+                <i class="fa fa-paper-plane"></i> Odoslať správu
+              </button>
+
+              <p class="form-note">
+                <i class="fa fa-lock"></i>
+                Vaše údaje sú v bezpečí a nebudú zdieľané s tretími stranami.
+              </p>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <i class="fa fa-check-circle"></i>
+              Ďakujeme! Vaša správa bola odoslaná. Ozveme sa Vám čo najskôr.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">FEDOR SECURITY EQUIPMENT</div>
+        <div class="footer-copy">&copy; 2026 Fedor SECURITY EQUIPMENT</div>
+        <nav class="footer-nav">
+          <a href="/about">O nás</a>
+          <a href="/services">Služby</a>
+          <a href="/contact">Kontakt</a>
+        </nav>
+      </div>
+      <div class="footer-nocookies">Táto stránka nepoužíva cookies ani analytické nástroje.</div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Formspree AJAX submit
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = form.querySelector('.form-submit');
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Odosielam...';
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('formSuccess').style.display = 'block';
+        } else {
+          btn.disabled = false;
+          btn.innerHTML = '<i class="fa fa-paper-plane"></i> Odoslať správu';
+          alert('Nastala chyba. Skúste nás kontaktovať telefonicky alebo emailom.');
+        }
+      } catch {
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fa fa-paper-plane"></i> Odoslať správu';
+        alert('Nastala chyba pri odosielaní. Skúste to znova alebo nás kontaktujte priamo.');
+      }
+    });
+  </script>
+</body>
+</html>

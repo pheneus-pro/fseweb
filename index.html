@@ -88,15 +88,15 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-6 col-md-3 mb-3 mb-md-0">
-          <div class="stat-n">30+</div>
+          <div class="stat-n" data-count="30">0+</div>
           <div class="stat-l">Rokov skúseností</div>
         </div>
         <div class="col-6 col-md-3 mb-3 mb-md-0">
-          <div class="stat-n">500+</div>
+          <div class="stat-n" data-count="500">0+</div>
           <div class="stat-l">Zabezpečených objektov</div>
         </div>
         <div class="col-6 col-md-3">
-          <div class="stat-n">100+</div>
+          <div class="stat-n" data-count="100">0+</div>
           <div class="stat-l">Úspešne implementovaných riešení</div>
         </div>
         <div class="col-6 col-md-3">
@@ -201,5 +201,34 @@
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function animateCounters() {
+      document.querySelectorAll('.stat-n[data-count]').forEach(function(el) {
+        var target = parseInt(el.getAttribute('data-count'));
+        var duration = 1200;
+        var steps = 40;
+        var interval = duration / steps;
+        var current = 0;
+        var timer = setInterval(function() {
+          current += Math.ceil(target / steps);
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          el.textContent = current + '+';
+        }, interval);
+      });
+    }
+
+    var observed = false;
+    var observer = new IntersectionObserver(function(entries) {
+      if (!observed && entries[0].isIntersecting) {
+        observed = true;
+        animateCounters();
+      }
+    }, { threshold: 0.3 });
+    var statsSection = document.querySelector('.stat-n[data-count]');
+    if (statsSection) observer.observe(statsSection.closest('section') || statsSection.closest('.container') || statsSection);
+  </script>
 </body>
 </html>
